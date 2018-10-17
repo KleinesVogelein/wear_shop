@@ -50,6 +50,7 @@
     color: #000;
     font-size: 20px;
     font-weight: 700;
+    max-height: 74px;
 }
 
 .button_call-to-action {
@@ -60,4 +61,26 @@
 .button_item-features {
     min-width: 80px;
     padding: 12px 24px;
+}
+
+.price {
+    display: block;
+}
+
+@media (min-width: 768px){
+    .item-preview__price{
+        font-size: 14px;
+    }
+
+    .item-preview__description {
+        font-size: 14px;
+    }
+
+    .button_call-to-action {
+        width: 340px;
+    }
+
+    .button_item-features {
+        
+    }
 }
