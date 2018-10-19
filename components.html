@@ -6,6 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i|Open+Sans:700|Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="components.css">
     <title>Document</title>
@@ -16,27 +17,30 @@
     <div class="app">
 
         <header class="header">
+            <div class="logo__wrapper">TL</div>
+            <div class="shopping-bag__wrapper">Bag (0)</div>
             <div class="menu">
-                <label for="hamburger-btn">&#9776;</label>
-                <input type="checkbox" id="hamburger-btn"></div>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="">Women</a></li>
-                    <li class="nav__item"><a href="">Men</a></li>
-                    <li class="nav__item"><a href="">Handbags</a></li>
-                    <li class="nav__item"><a href="">Accessories</a></li>
-                    <li class="nav__item"><a href="">Sale</a></li>
-                    <li class="nav__item"><a href="">New Arrivals</a></li>
-                    <li class="nav__item"><a href="">Clearance</a></li>
-                    <li class="nav__item"><a href="">Store Locator</a></li>
-                    <li class="nav__item">
-                        <form action="" class="search_form">
-                            <input type="search" class="search-bar">
-                            <input type="submit" class="search-btn">
-                        </form>
-                    </li>
-                </ul>
-            </nav>
+                <label for="hamburger-btn" class="hamburger-btn__label">&#9776;</label>
+                <input type="checkbox" id="hamburger-btn" class="hamburger-btn">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item active-item"><a href="#">Women</a></li>
+                        <li class="nav__item"><a href="#">Men</a></li>
+                        <li class="nav__item"><a href="#">Handbags</a></li>
+                        <li class="nav__item"><a href="#">Accessories</a></li>
+                        <li class="nav__item"><a href="#">Sale</a></li>
+                        <li class="nav__item"><a href="#">New Arrivals</a></li>
+                        <li class="nav__item"><a href="#">Clearance</a></li>
+                        <li class="nav__item"><a href="#">Store Locator</a></li>
+                        <li class="nav__item">
+                            <form action="" class="search-form">
+                                <input type="search" class="search-bar">
+                                <button class="search-btn" type="submit"> <i class="fas fa-search"  aria-hidden="true"></i> </button>
+                            </form>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
         </header>
 

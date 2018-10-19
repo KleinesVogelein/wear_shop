@@ -27,8 +27,124 @@ a {
 }
 
 .header {
+    display: flex;
+    height: 70px;
+}
+
+.logo__wrapper {
+    width: 50px;
+}
+
+.shopping-bag__wrapper {
+    width: 50px;
+}
+
+
+
+.hamburger-btn__wrapper {
+    width: 55px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+
+}
+
+.hamburger-btn {
+    display: none;
+}
+
+.hamburger-btn__label {
+    display: block;
+    width: 55px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    font-size: 26px;
+    line-height: 70px;
+}
+
+.menu{
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+.nav {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+    display: none;
+}
+
+#hamburger-btn:checked + .nav {
     display: block;
 }
+
+.nav__list {
+    height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+
+    list-style: none;
+}
+
+.nav__item{
+    margin-bottom: 30px;
+}
+
+.nav__item:last-of-type {
+    margin-bottom: 0;
+}
+
+.search-form {
+    max-width: 170px;
+    position: relative;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    height: 35px;
+}
+
+.search-bar {
+    height: 35px;
+    line-height: 35px;
+    /* padding: 5px 40px 5px 15px; */
+    width: 100%;
+    display: block;
+    /* border: 3px outset rgba(137, 20, 167, 1.00); */
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 12px;
+
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+
+}
+
+.search-btn {
+    position: absolute; 
+    top: 0; right: 0;
+    height: 100%;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    /* background-color: #33494C; */
+    /* border: 1px #2F4F23 outset; */
+    /* color: #AFCF00;  */
+}
+
+
+
 
 .item-preview__wrapper {
     display: flex;
