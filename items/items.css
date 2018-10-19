@@ -1,22 +1,16 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .header {
     width: 100%;
-    height: 70px;
+    height: 7em;
     background-color: lightblue;
 }
 
 .back-link {
     max-width: 100%;
-    height: 55px;
-    line-height: 55px;
-    padding: 0 20px;
+    height: 5.5em;
+    line-height: 5.5em;
+    padding: 0 2em;
     vertical-align: middle;
-    border: 1px solid #000;
+    border-bottom: .1em solid #000;
         
 }
 
@@ -32,7 +26,7 @@ i {
 .back-link__text {
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 1.2em;
     color: #000000;
     text-align: center;
     text-decoration: none;
@@ -40,15 +34,15 @@ i {
 }
 
 .main {
-    padding: 0 20px;
+    max-width: 335px;
+    margin: 0 auto;
 }
 
 .item-photo {
-    padding-top: 15px;
+    padding-top: 1.5em;
 }
 
 .main__img {
-    display: block;
     height: 100%;
 }
 
@@ -57,7 +51,7 @@ i {
 }
 
 .item-photo__secondary {
-    display: block;
+
 }
 
 
@@ -71,53 +65,55 @@ i {
 }
 
 .item__short-descr {
-    margin-top: 35px;
+    margin-top: 3.5em;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 2em;
     text-align: center;
 }
 
 .item__price {
-    margin-top: 15px;
+    margin-top: 1.5em;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8em;
     text-align: center;
 }
 
 .item__long-descr {
     font-family: "Libre Baskerville", serif;
     font-style: italic;
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 1.3em;
+    line-height: 3em;
     text-align: center;
 }
 .item-feature__wrapper {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.0em;
 }
 .item-feature {
     display: flex;
-    height: 60px;
+    height: 6.0em;
 }
 
 .item-feature:last-of-type {
-    margin-top: 30px;
+    margin-top: 3.0em;
 }
 
 .feature-title {
-    width: 50px;
-    padding-left: 10px;
+    width: 5.0em;
+    padding-left: 1.0em;
     font-family: "Roboto", sans-serif;
-    font-size: 12px;
+    font-size: 1.2em;
     font-weight: 400;
-    line-height: 60px;
+    line-height: 6.0em;
 }
 
 .feature-variabels {
     display: flex;
     justify-content: space-between;
-    margin-left: 10px;
+    margin-left: 1.0em;
 }
 
 .button {
@@ -127,18 +123,17 @@ i {
     color: #000;
     border: none;
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 1.4em;
     font-weight: 700;
-    max-height: 74px;
+    max-height: 7.4em;
 }
 
 .button-active {
-    border: #e5e5e5 1px solid;
+    border: #e5e5e5 .1em solid;
 }
 
 .button_item-features {
-    min-width: 80px;
-    padding: 12px 24px;
+    min-width: 6em;
 }
 
 
@@ -146,43 +141,166 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 65px 70px;
+    padding: 6.5em 7.0em;
 }
 
 .button_call-to-action {
-    width: 220px;
-    height: 60px;
+    width: 22.0em;
+    height: 6.0em;
+}
+
+.banner__wrapper {
+    width: 100%;
+    height: 240px;
 }
 
 .banner {
     position: relative;
 }
 
+.banner-first {
+    height: 100%;
+    background-image: url(img/banner-first.jpg);
+    background-color: #324063;
+    background-size: cover;
+}
+
+.banner-second {
+    background-image: url(img/banner-second.jpg);
+    background-color: #c9cbcd;
+    background-size: cover;
+    display: none;
+}
+
+.banner-third {
+    background-image: url(img/banner-third.jpg);
+    background-color: #fff;
+    background-size: cover;
+    display: none;
+}
+
+
+
 .banner__text {
     position: absolute;
-    right: 20px;
-    top: 30px;
+    right: 2.0em;
+    top: 3.0em;
     z-index: 1;
     color: #fff;
     text-align: center;
 }
 
+.banner-second__text {
+    top: 16em;
+    right: 5em;
+}
+
+.banner-third__text{
+    
+}
+
 .banner__title {
     font-family: "Open Sans", sans-serif;
-    font-size: 20px;
+    font-size: 2.0em;
     font-weight: 700;
+}
+
+.banner-third__title {
+    color: #f14a58;
+    
 }
 
 .banner__descr {
     font-family: "Lebre Baskerville", serif;
-    font-size: 14px;
+    font-size: 1.4em;
     font-weight: 400;
     font-style: italic;
-    line-height: 26px;  
+    line-height: 2.6em;  
 }
 
-.banner__img {
-    position: absolute;
-    left: 0;
-    top: 0;
+.banner-second__descr {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+
+@media screen and (min-width: 768px) {
+    .main {
+        max-width: 690px;
+    }
+
+    .back-link__text {
+        font-size: 1.6em;
+    }
+
+    .item-photo {
+        display: flex;
+    }
+
+    .item-photo__main {
+        height: 345px;        
+    }
+
+    .item-photo__secondary-wrapper {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main__img{
+        width: unset;
+    }
+
+    .item__long-descr {
+        max-width: 450px;
+        
+    }
+       
+    .item-feature__wrapper  {
+        align-items: center;
+    }
+
+    .banner__wrapper {
+        width: 100%;
+        height: 253px;
+        display: flex;
+    }
+
+    .banner-first {
+        flex-grow: 2;
+    }
+
+    .banner-second {
+        display: block;
+        flex-grow: 1;
+    }
+
+    .banner-first__text {
+        right: 4.7em;
+        top: 4.5em;
+    }
+
+
+}
+
+@media screen and (min-width: 1300px){
+
+
+
+    .banner__wrapper {
+        height: 385px;
+    }
+
+    .banner-third{
+        display: block;
+        flex-grow: 1;
+    }
+
+    .banner__title {
+        font-size: 28px;
+    }
+
+
+
+
 }
